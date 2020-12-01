@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Twilio Cloud Communications | Web Service API for building Voice and SMS Applications</title>
+  <meta name="heartbeat" content="twilio">
+  <meta name="csrfToken" content="8f963d2041844f7ef61e29705d039db7b3174ecbcab3dbd4999b1e4842869169">
+  <meta property="twitter:account_id" content="15936194">
+  <script type="text/javascript" async="" src="https://cdn.siftscience.com/s.js"></script>
+  <script src="https://rules.quantcount.com/rules-p-efmoRQHrDUXig.js" async=""></script>
+<!--  <link rel="stylesheet" href="css/notification.css">-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" crossorigin="anonymous" src="//assets.twilio.com/public_assets/console-js/2.11.0/js/ads.js"></script>
+
+  <script>
+    $(function () {
+      $("#header").load("base/header.html");
+      // $("#sidebar").load("sidebar.html");
+
+    });
+  </script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/751085158/?random=1606361458735&amp;cv=9&amp;fst=1606361458735&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=24&amp;u_tz=420&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2wgb41&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.twilio.com%2Fconsole%2Fnotification-preferences&amp;ref=https%3A%2F%2Fwww.twilio.com%2Fconsole%2Fusage%3Fdate%3D2020-11&amp;tiba=Twilio%20Cloud%20Communications%20%7C%20Web%20Service%20API%20for%20building%20Voice%20and%20SMS%20Applications&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+</head>
+<body>
+<div id="header"></div>
+<!--  <div class="test"style="display: flex; flex-direction: row">-->
+
+    <div style="margin-top: 100px; margin-left: 10%" id="content" class="col-md-24 p-r-md col-offset-sidebar">
+      <noscript>
+        <div class="alert alert-warning" data-s="warning-javascript">
+          <a href="https://www.twilio.com/console">Twilio Portal</a> is designed for javascript enabled browsers. Please enable javascript before proceeding. </div>
+      </noscript>
+      <div id="alert-container" class="" data-s="flash-messages" style="width: 1106px;"></div>
+      <div id="announcements"></div>
+      <div id="notification-preferences-console"><div>
+        <div class="ui-component-pages page">
+          <header class="ui-component-pageheader">
+            <!--        <i class="far fa-window-close"></i>-->
+            <h1 class="ui-component-pageheader__title">Notification Preferences</h1>
+          </header>
+          <span>
+        <p class="description">As the Owner or Administrator of this account, manage which of your teammates receive the following types of notifications.<br>The account owner cannot opt-out of these notifications.</p>
+        <table class="ui-component-table">
+          <thead>
+          <tr class="ui-component-table-row">
+            <th class="ui-component-table-row__cell ui-component-table-row__cell_capitalized ui-component-table-row__cell_first ui-component-table-row__cell_header">NOTIFICATIONS</th>
+            <th class="ui-component-table-row__cell ui-component-table-row__cell_capitalized ui-component-table-row__cell_header">ROLES WITH NOTIFICATION ACCESS</th>
+            <th class="ui-component-table-row__cell ui-component-table-row__cell_capitalized ui-component-table-row__cell_header">USERS</th>
+            <th class="ui-component-table-row__cell ui-component-table-row__cell_capitalized ui-component-table-row__cell_header">ADD ROLE</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="ui-component-table-row">
+            <td class="ui-component-table-row__cell ui-component-table-row__cell_first"><div>
+              <div class="notification-preferences-title"><span>Pricing Updates</span></div>
+              <div class="notification-preferences-description">Updates to product prices and rates</div>
+            </div>
+            </td>
+            <td class="ui-component-table-row__cell">
+              <div class="subscribed-roles">
+                <span>
+                  <div class="ui-component-tag ui-component-tag_color_blue">
+                    <div class="ui-component-tag__label">Owner (1)</div>
+                  </div>
+                </span>
+                <span>
+                  <div class="ui-component-tag ui-component-tag_color_blue">
+                    <div class="ui-component-tag__label">Administrator (0)</div>
+                    <button class="ui-component-tag__delete">
+                                            <i class="far fa-trash-alt"></i>
+
+                    </button>
+                  </div>
+                </span>
+              </div>
+            </td>
+            <td class="ui-component-table-row__cell">
+              <div class="view-users">
+                <span>
+                  <span class=" ui-component-tooltip__anchor">
+                    <a href="#">View Users</a>
+                  </span>
+                </span>
+                <span class=" ui-component-tooltip__anchor">
+                  <i class="ui-component-icon ui-component-icon_size_null icon-twilio-warning  fas fa-info-circle"></i>
+                </span>
+              </div>
+            </td>
+            <td class="ui-component-table-row__cell">
+          <div class="dropdown" >
+    <button style="background: white; color: black" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Role
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Adminstrator</a></li>
+      <li><a href="#">Developer</a></li>
+      <li><a href="#">Billing Manager</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+  </div>
+            </td>
+          </tr>
+          <tr class="ui-component-table-row">
+            <td class="ui-component-table-row__cell ui-component-table-row__cell_first">
+              <div>
+                <div class="notification-preferences-title"><span>Regulatory and Compliance Alerts</span>
+              </div>
+                <div class="notification-preferences-description">Alerts on regulatory and compliance issues/requests</div>
+              </div>
+            </td>
+            <td class="ui-component-table-row__cell">
+              <div class="subscribed-roles">
+                <span>
+                  <div class="ui-component-tag ui-component-tag_color_blue"><div class="ui-component-tag__label">Owner (1)</div>
+                  </div>
+                </span>
+                <span>
+                  <div class="ui-component-tag ui-component-tag_color_blue">
+                    <div class="ui-component-tag__label">Administrator (0)</div>
+                    <button class="ui-component-tag__delete">
+                   <i class="far fa-trash-alt"></i>
+                    </button>
+                  </div>
+                </span>
+              </div>
+            </td>
+            <td class="ui-component-table-row__cell">
+              <div class="view-users">
+                <span>
+                  <span class=" ui-component-tooltip__anchor">
+                    <a href="#">View Users</a>
+                  </span>
+                </span>
+                <span class=" ui-component-tooltip__anchor">
+                  <i class="ui-component-icon ui-component-icon_size_null icon-twilio-warning fas fa-info-circle"></i>
+                </span>
+              </div>
+            </td>
+            <td class="ui-component-table-row__cell">
+              <div class="dropdown" >
+    <button style="background: white; color: black" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Role
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Adminstrator</a></li>
+      <li><a href="#">Developer</a></li>
+      <li><a href="#">Billing Manager</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+  </div>
+            </td>
+          </tr>
+          <tr class="ui-component-table-row">
+            <td class="ui-component-table-row__cell ui-component-table-row__cell_first">
+              <div><div class="notification-preferences-title">
+                <span>Developer Updates</span>
+              </div>
+                <div class="notification-preferences-description">Updates to Twilio APIs, helper libraries and other developer tools</div>
+              </div>
+            </td>
+            <td class="ui-component-table-row__cell">
+              <div class="subscribed-roles">
+                <span>
+                  <div class="ui-component-tag ui-component-tag_color_blue">
+                    <div class="ui-component-tag__label">Owner (1)</div>
+                  </div>
+                </span>
+                <span>
+                  <div class="ui-component-tag ui-component-tag_color_blue">
+                    <div class="ui-component-tag__label">Administrator (0)</div>
+                    <button class="ui-component-tag__delete">
+                      <i class="far fa-trash-alt"></i>
+                    </button>
+                  </div>
+                </span>
+                <span>
+                  <div class="ui-component-tag ui-component-tag_color_blue">
+                    <div class="ui-component-tag__label">Developer (0)</div>
+                    <button class="ui-component-tag__delete">
+                                            <i class="far fa-trash-alt"></i>
+                    </button>
+                  </div>
+                </span>
+              </div>
+            </td>
+            <td class="ui-component-table-row__cell">
+              <div class="view-users">
+                <span>
+                  <span class=" ui-component-tooltip__anchor">
+                    <a href="#">View Users</a>
+                  </span></span>
+                <span class=" ui-component-tooltip__anchor">
+                                <i class="ui-component-icon ui-component-icon_size_null icon-twilio-warning fas fa-info-circle"></i>
+
+                </span>
+              </div>
+            </td>
+            <td class="ui-component-table-row__cell">
+             <div class="dropdown" >
+    <button style="background: white; color: black" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Role
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Adminstrator</a></li>
+      <li><a href="#">Developer</a></li>
+      <li><a href="#">Billing Manager</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+  </div>
+            </td>
+          </tr>
+          <tr class="ui-component-table-row">
+            <td class="ui-component-table-row__cell ui-component-table-row__cell_first">
+              <div>
+                <div class="notification-preferences-title"><span>Legal and Privacy Updates</span>
+                </div>
+                <div class="notification-preferences-description">Updates to our legal terms, such as a our Terms of Service or Privacy Notices</div>
+              </div></td><td class="ui-component-table-row__cell">
+            <div class="subscribed-roles"><span>
+              <div class="ui-component-tag ui-component-tag_color_blue">
+                <div class="ui-component-tag__label">Owner (1)</div>
+              </div>
+            </span>
+              <span>
+                <div class="ui-component-tag ui-component-tag_color_blue">
+                  <div class="ui-component-tag__label">Administrator (0)</div>
+                  <button class="ui-component-tag__delete">
+                      <i class="far fa-trash-alt"></i>
+
+                  </button>
+                </div>
+              </span>
+              <span>
+                <div class="ui-component-tag ui-component-tag_color_blue">
+                  <div class="ui-component-tag__label">Developer (0)</div>
+                  <button class="ui-component-tag__delete">
+                                          <i class="far fa-trash-alt"></i>
+
+                  </button>
+                </div>
+              </span>
+              <span>
+                <div class="ui-component-tag ui-component-tag_color_blue">
+                  <div class="ui-component-tag__label">Billing Manager (0)</div>
+                  <button class="ui-component-tag__delete">
+                                         <i class="far fa-trash-alt"></i>
+
+                    </i>
+                  </button>
+                </div>
+              </span><span>
+                <div class="ui-component-tag ui-component-tag_color_blue">
+                  <div class="ui-component-tag__label">Support (0)</div>
+                  <button class="ui-component-tag__delete">
+                                          <i class="far fa-trash-alt"></i>
+
+                  </button></div> </span></div></td><td class="ui-component-table-row__cell">
+            <div class="view-users"><span><span class=" ui-component-tooltip__anchor">
+            <a href="#">View Users</a></span></span>
+            <span class=" ui-component-tooltip__anchor">
+              <i class="ui-component-icon ui-component-icon_size_null icon-twilio-warning fas fa-info-circle"></i>
+            </span>
+          </div>
+          </td>
+            <td class="ui-component-table-row__cell">
+              <div class="add-user-roles"></div>
+            </td>
+          </tr>
+          <tr class="ui-component-table-row">
+            <td class="ui-component-table-row__cell ui-component-table-row__cell_first">
+              <div>
+                <div class="notification-preferences-title">
+                  <span>Security and Fraud Alerts</span>
+                </div>
+                <div class="notification-preferences-description">Warnings about active fraudulent attacks and potential security vulnerabilities</div>
+              </div>
+            </td>
+            <td class="ui-component-table-row__cell">
+              <div class="subscribed-roles">
+                <span>
+                  <div class="ui-component-tag ui-component-tag_color_blue">
+                    <div class="ui-component-tag__label">Owner (1)</div>
+                  </div>
+                </span>
+                <span>
+                  <div class="ui-component-tag ui-component-tag_color_blue">
+                    <div class="ui-component-tag__label">Administrator (0)</div>
+                    <button class="ui-component-tag__delete">
+                      <i class="far fa-trash-alt"></i>
+                    </button>
+                  </div>
+                </span>
+              </div>
+            </td>
+            <td class="ui-component-table-row__cell">
+              <div class="view-users">
+                <span>
+                  <span class=" ui-component-tooltip__anchor">
+                    <a href="#">View Users</a>
+                  </span></span>
+                <span class=" ui-component-tooltip__anchor">
+  <i class="ui-component-icon ui-component-icon_size_null icon-twilio-warning fas fa-info-circle"></i>
+                  </i></span></div></td>
+            <td class="ui-component-table-row__cell">
+              <div class="add-user-roles">
+               <div class="dropdown" >
+    <button style="background: white; color: black" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Role
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Adminstrator</a></li>
+      <li><a href="#">Developer</a></li>
+      <li><a href="#">Billing Manager</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+  </div>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <p class="preferences-disclaimer" style="font-size: 10px;">By opting out non-owner roles from Legal and Privacy notices, you agree that the Owner is authorized to receive these notices on their behalf.</p></span>
+          <p class="marketing-opt-out-link">To manage your marketing emails, click&nbsp;<a href="https://pages.twilio.com/Email-Preference-Center.html" target="_blank" rel="noreferrer">here<i class="ui-component-icon ui-component-icon_size_null icon-twilio-external-link ui-component-link__icon"></i></a></p></div></div></div></div>
+
+  </div>
+
+
+</body>
+</html>

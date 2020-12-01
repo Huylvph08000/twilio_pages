@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--    <link rel="stylesheet" href="css/main.css">-->
+<!--    <link rel="stylesheet" href="css/base.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function () {
+            $("#nav").load("base/header.html");
+            // $("#side").load("base/sidebar.html");
+        });
+    </script>
+</head>
+<body >
+<div id="nav"></div>
+<div class="show"style="display: flex; flex-direction: row">
+  <div class="content_dashboard content-body">
+
+    <h1 style="font-size: 30px; font-weight: 300">My first Twilio project Dashboard</h1>
+    <div class="content_dashboard-first_content"
+         style="width: 100%; height: 130px;display: inline-flex;  border: 1px solid #e6e6e6;">
+      <div class="content_dashboard-first_content_image" style="height: 100%; width: 94px;">
+        <img class="welcome-img img-responsive" style="width: 100%; height: 55%;margin-top: 30px"
+             src="img/Dashboard.png">
+      </div>
+      <div class="content_dashboard-first_content_text" style="width: 450px; height:100%;margin-left: 24px">
+        <h5 class="title" style="font-size: 18px;font-family: inherit;
+    font-weight: 400;
+    color: inherit;">Hi there! Want to get an app running with no code?</h5>
+        <p>Check out our most popular use cases</p>
+      </div>
+      <div class="content_dashboard-first_content_image_button" style="width: 190px; height: 100%">
+        <div class="content_dashboard-first_content_image_button-a"
+             style="width: 188px; height: 35px;margin-top: 50px;border: 1px solid #e6e6e6;">
+          <a href="" target="_blank" rel="noopener noreferrer"
+             style="text-decoration: none; margin-left: 32px;color: black">See app samples
+            <i class="fas fa-directions"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content_dashboard_project_infor"
+         style="width: 100%;height: 40px; margin-top: 24px;border: 1px solid #e6e6e6;">
+      <div class="collapsible" style="width: 100%; height: 100%;margin-left: 16px">Project info</div>
+      <div class="content"
+           style="height: auto;width: 100%;border: 1px solid #e6e6e6;display: inline-flex;margin-bottom: 80px;padding-bottom: 16px">
+        <div class="content_dashboard_project_infor__collapse_left-content" style="width: 50%;">
+          <!--              <p style="text-transform: uppercase">Trial Balance</p>-->
+          <!--              <div class="content_dashboard_project_infor__collapse_left-content-1" style="display: flex;margin-left: 16px">-->
+          <!--                <div class="content_dashboard_project_infor__collapse_left-content-1-left" style="width: 240px; height: 60px">-->
+          <!--                  <span class=" ui-component-tooltip__anchor">-->
+          <!--                    <a href="#" class="ui-component-link ui-component-link_ngc a-unadorned">-->
+          <!--                    <span class="amount" style="color: #29bb4f;font-weight: bold">$15.50</span></a>-->
+          <!--                  </span>-->
+          <!--                </div>-->
+          <!--                <div class="content_dashboard_project_infor__collapse_left-content-1-right" style="width: 40%; height: 60px;">-->
+          <!--                  <button type="button" class="btn btn-danger ui-component-tooltip__anchor" style=" height: 36px;">Get a trial number</button>-->
+          <!--                  <a style="padding-top: 8px" href="http://www.twilio.com/blog/what-does-twilio-do#it-all-starts-with-the-phone-number" class="ui-component-link ui-component-link_ngc" target="_blank" rel="noopener noreferrer">How does Twilio use numbers?<i class="ui-component-icon ui-component-icon_size_null icon-twilio-external-link ui-component-link__icon"></i></a>-->
+          <!--                </div>-->
+          <!--              </div>-->
+          <div class="panel-row panel-content row">
+            <div class="col-sm-8" style="width: 40%;">
+              <dl class="project-onboarding-controls balance text-success">
+                <dt>Trial Balance
+                </dt>
+                <dd><span class=" ui-component-tooltip__anchor"><a href="/console/billing"
+                                                                   class="ui-component-link ui-component-link_ngc a-unadorned"><span
+                  class="amount">
+                $15.50</span>
+              </a>
+              </span>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-sm-16">
+              <dl class="project-onboarding-controls">
+                <dt>
+                </dt>
+                <dd style="margin-left: 16px;margin-right: 10%">
+                  <span class=" ui-component-tooltip__anchor">
+<!--                <a href="#" class="ui-component-button ui-component-button_style_primary ui-component-button_as_link" style="width: 34px; height: 119px"  data-toggle="modal">Get a Trial Number</a>-->
+                    <button type="button" class="btn btn-danger"
+                            style="width: 128px; height: 28px;margin: 0;padding: 0">Referral Dashboard</button>
+              </span>
+                </dd>
+              </dl>
+              <div class="blog-url" style="margin-left: 16px">
+                <a href="http://www.twilio.com/blog/what-does-twilio-do#it-all-starts-with-the-phone-number"
+                   class="ui-component-link ui-component-link_ngc" target="_blank"
+                   rel="noopener noreferrer">
+                  How does it use <i
+                  class="ui-component-icon ui-component-icon_size_null icon-twilio-external-link ui-component-link__icon">
+
+                </i></a></div>
+            </div>
+          </div>
+          <br><br>
+          <p style="text-transform: uppercase">Referral program</p>
+          <div class="refer">
+            <p style="margin-right: 16px;">Refer your network to Twilio — give $10, get $10.</p>
+            <button type="button" class="btn btn-danger"
+                    style="width: 128px; height: 28px;margin: 0;padding: 0">Referral Dashboard
+            </button>
+          </div>
+          <br><br><br>
+          <p style="text-transform: uppercase">Account Sid</p>
+          <div class="accountid">
+            <dd>
+              <div class="input-group">
+                <input type="text" class="form-control flat-input" id="runtime-domain" disabled=""
+                       value="AC9575b804c034946c66246dff2ae96476">
+                <a class="input-group-addon flat-group-addon">
+                  <span class=" ui-component-tooltip__anchor">
+                    <i class="icon icon-twilio-copy far fa-copy"></i></span></a></div>
+            </dd>
+          </div>
+          <br><br>
+          <p style="text-transform: uppercase">Auth Token</p>
+          <dd>
+            <div class="input-group">
+              <a onclick="myFunction()"
+                 class="ui-component-link ui-component-link_ngc input-group-addon flat-group-addon text-capitalize show-hide-toggle">show</a>
+              <input type="text" id="auth_token" class="form-control flat-input" disabled="" value="">
+              <a class="input-group-addon flat-group-addon">
+                <span class=" ui-component-tooltip__anchor">
+                  <i class="icon icon-twilio-copy far fa-copy"></i>
+                </span
+                ></a>
+            </div>
+          </dd>
+        </div>
+
+
+        <div class="content_dashboard_project_infor__collapse_right-content " style="width: 50%;margin-left: 16px">
+          <div class="body-right">
+            <div class="panel-row panel-content">
+              <div data-s="trial-description-content"><br><br><br>
+                <h6 style="font-weight: bold">Here's how your Twilio Trial account works:
+                </h6>
+                <ul>
+                  <li>You can send messages and make calls to
+                    <a href="/console/phone-numbers/verified"
+                       class="ui-component-link ui-component-link_ngc">
+                      verified numbers</a>.
+                  </li>
+                  <li>Messages and calls include a note about this coming from a "Twilio trial account."
+                  </li>
+                </ul>
+                <p>Learn more about <a href="/docs/usage/tutorials/how-to-use-your-free-trial-account"
+                                       class="ui-component-link ui-component-link_ngc" target="_blank"
+                                       rel="noopener noreferrer">
+                  your trial<i
+                  class="ui-component-icon ui-component-icon_size_null icon-twilio-external-link ui-component-link__icon"></i>
+                </a> or <a href="/console/billing/upgrade" class="ui-component-link ui-component-link_ngc">upgrade</a>
+                  to remove restrictions.</p><br><br>
+              </div>
+            </div>
+            <div class="panel-row panel-content panel-last-row">
+              <div class="content-item"></div>
+              <div class="content-item" style="display: inline-flex">
+                <div class="col-sm-12 panel-row-col">
+                  <dl class="project-onboarding-controls nowrap control-account-friendly-name">
+                    <dt>Project name</dt>
+                    <dd>
+                      <div class="ui-component-editable-field ui-component-editable-field_type_text ui-component-editable-field_mode_readonly">
+                  <span class="field field_state_valid"><br>
+                    <span class="field__text">My first Twilio project <i class="far fa-edit"></i></span>
+                    <span class=" ui-component-tooltip__anchor">
+                      <button style="color: white"
+                              class="ui-component-button ui-component-button_style_default btn action action_type_edit"
+                              type="button">
+                      </button>
+                    </span>
+                  </span>
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="col-sm-12 panel-row-col">
+                  <dl class="project-onboarding-controls control-programming-language read-only">
+                    <dt>Programming language</dt>
+                    <br>
+                    <dd>Other</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="content-item"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    </div>
+  </div>
+
+<!--  <div id="side"></div>-->
+
+</div>
+</body>
+</html>

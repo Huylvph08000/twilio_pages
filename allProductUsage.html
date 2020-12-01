@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/allProductUsage.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/header.css">
+  <script>
+    $(function () {
+      $("#nav").load("./base/header.html");
+    });
+  </script>
+</head>
+<body>
+<div id="nav"></div>
+<div style="margin-left: 10%; margin-top: 100px" class="content_allProductUsge">
+  <div class="usage-summary">
+    <h1 class="usage-summary__title">All Product Usage</h1>
+    <div class="usage-summary__disclaimer">
+      <div class="disclaimer__component">
+        <span class="disclaimer__component--text">
+          Costs listed here may exclude taxes, fees, support fees, expert services costs, and certain other products.
+        </span>
+        <span class="disclaimer__component--additional-info">
+          <span class=" ui-component-tooltip__anchor">
+            <a href="#"><i class="ui-component-icon ui-component-icon_size_null icon-twilio-information fas fa-info-circle">
+            </i>
+            </a>
+          </span>
+        </span>
+      </div>
+    </div>
+    <div>
+      <div class="usage-summary-overview">
+        <div class="usage-summary-overview__header">
+          <div class="dropdown">
+            <button  type="button" class="btn btn-primary-outline dropdown-toggle" data-toggle="dropdown">
+              NOV 2020 ^
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Nov 2020</a>
+            </div>
+          </div>
+          <div class="usage-summary-overview__as-of-date-text">As of 02:21:20 UTC 2020-11-26</div>
+        </div>
+      </div>
+      <div class="usage-summary-overview__body">
+        <table class="ui-component-table">
+          <thead>
+          <tr class="ui-component-table-row">
+            <th class="ui-component-table-row__cell ui-component-table-row__cell_capitalized ui-component-table-row__cell_first ui-component-table-row__cell_header usage-summary-overview__usage-left-col">Product</th>
+            <th class="ui-component-table-row__cell ui-component-table-row__cell_capitalized ui-component-table-row__cell_header usage-summary-overview__usage-right-col">Units</th>
+            <th class="ui-component-table-row__cell ui-component-table-row__cell_capitalized ui-component-table-row__cell_header usage-summary-overview__usage-right-col">Quantity</th>
+            <th class="ui-component-table-row__cell ui-component-table-row__cell_capitalized ui-component-table-row__cell_header usage-summary-overview__usage-right-col">Cost</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="ui-component-table-row">
+            <td class="ui-component-table-row__cell ui-component-table-row__cell_first text-left usage-summary-overview__usage-left-col">
+              <b>All accounts total</b>
+            </td>
+            <td class="ui-component-table-row__cell"></td>
+            <td class="ui-component-table-row__cell"></td>
+            <td class="ui-component-table-row__cell text-left usage-summary-overview__usage-right-col">
+              <b>$0.00</b>
+            </td>
+          </tr>
+          </tbody>
+          <tbody>
+          <tr class="ui-component-table-row"></tr>
+          </tbody>
+
+          <tbody>
+          <tr class="ui-component-table-row">
+            <td class="ui-component-table-row__cell ui-component-table-row__cell_first text-left usage-summary-overview__usage-left-col">
+              <span data-toggle="collapse" data-target="#demo">
+                <span><i class="icon icon-caret-down pointer fas fa-info-circle fas fa-angle-up" style="padding-left: 0px; color: black;"></i>
+                <span class="usage-summary-overview__space-left" style="font-weight: 500;">My first Twilio project
+                </span>
+              </span>
+              </span>
+            </td>
+            <td class="ui-component-table-row__cell">
+            </td>
+            <td class="ui-component-table-row__cell">
+            </td>
+            <td class="ui-component-table-row__cell text-left usage-summary-overview__usage-right-col">
+              <span style="font-weight: 500;">$0.00</span>
+            </td>
+          </tr>
+          <tr id="demo" class="ui-component-table-row collapse">
+            <td class="ui-component-table-row__cell ui-component-table-row__cell_first text-left usage-summary-overview__usage-left-col">No usage to display</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+#sidebar-wrapper, #sidebar-wrapper #sidebar {
+  overflow-y: hidden;
+  display: flex;
+  transition: opacity .2s ease-in-out,width .2s ease-in-out;
+  flex-basis: auto;
+  width: auto;
+  flex-shrink: 0;
+}
+
+ #sidebar-wrapper {
+   height: calc(100vh - 80px);
+   position: static;
+ }

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Sidebar</title>
+</head>
+<body>
+<div>
+  <div id="sidebar-wrapper" class="hidden-print">
+    <div id="left-dock" data-react="console-navigation">
+      <div data-reactroot="" class="left-dock-product-wrapper">
+        <div id="product-overlay" class="hide"></div>
+        <div class="product-menu-wrapper">
+          <ul class="dropdown-menu">
+            <li class="group"><span class="group-name">Communications Cloud</span></li>
+            <li class="product-menu-item" id="product-menu-item-sms-mms"><a href="/console/sms" data-s="sms-mms"
+                                                                            class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-messaging"></i><span
+              class="product-name">Programmable Messaging</span></a><a href="#" class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="product-menu-item" id="product-menu-item-voice"><a href="/console/voice" data-s="voice"
+                                                                          class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-voice"></i><span class="product-name">Programmable Voice</span></a><a
+              href="#" class="pull-right pin-icon"><span class="pin-tooltip ui-component-tooltip__anchor"><i
+              class="icon icon-twilio-thumb-tack"></i></span></a></li>
+            <li class="product-menu-item" id="product-menu-item-video"><a href="/console/video" data-s="video"
+                                                                          class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-video"></i><span class="product-name">Programmable Video</span></a><a
+              href="#" class="pull-right pin-icon"><span class="pin-tooltip ui-component-tooltip__anchor"><i
+              class="icon icon-twilio-thumb-tack"></i></span></a></li>
+            <li class="product-menu-item" id="product-menu-item-chat"><a href="/console/chat" data-s="chat"
+                                                                         class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-ip-messaging"></i><span
+              class="product-name">Programmable Chat</span></a><a href="#" class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="product-menu-item" id="product-menu-item-fax"><a href="/console/fax" data-s="fax"
+                                                                        class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-fax"></i><span class="product-name">Programmable Fax</span></a><a href="#"
+                                                                                                                class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="product-menu-item" id="product-menu-item-autopilot"><a href="/console/autopilot"
+                                                                              data-s="autopilot"
+                                                                              class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-autopilot"></i><span class="product-name">Autopilot</span></a><a href="#"
+                                                                                                               class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="group"><span class="group-name">Super Network</span></li>
+            <li class="product-menu-item" id="product-menu-item-phone-numbers"><a href="/console/phone-numbers"
+                                                                                  data-s="phone-numbers"
+                                                                                  class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-phone-numbers"></i><span class="product-name">Phone Numbers</span></a><a
+              href="#" class="pull-right pin-icon"><span class="pin-tooltip ui-component-tooltip__anchor"><i
+              class="icon icon-twilio-thumb-tack"></i></span></a></li>
+            <li class="product-menu-item" id="product-menu-item-sip-trunking"><a href="/console/sip-trunking"
+                                                                                 data-s="sip-trunking"
+                                                                                 class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-sip-trunking"></i><span
+              class="product-name">Elastic SIP Trunking</span></a><a href="#" class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="product-menu-item" id="product-menu-item-iot"><a href="/console/iot" data-s="iot"
+                                                                        class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-wireless"></i><span class="product-name">Internet of Things</span></a><a
+              href="#" class="pull-right pin-icon"><span class="pin-tooltip ui-component-tooltip__anchor"><i
+              class="icon icon-twilio-thumb-tack"></i></span></a></li>
+            <li class="product-menu-item" id="product-menu-item-interconnect"><a href="/console/interconnect"
+                                                                                 data-s="interconnect"
+                                                                                 class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-interconnect"></i><span class="product-name">Interconnect</span></a><a
+              href="#" class="pull-right pin-icon"><span class="pin-tooltip ui-component-tooltip__anchor"><i
+              class="icon icon-twilio-thumb-tack"></i></span></a></li>
+            <li class="product-menu-item" id="product-menu-item-lookup"><a href="/console/lookup" data-s="lookup"
+                                                                           class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-lookup"></i><span class="product-name">Lookup</span></a><a href="#"
+                                                                                                         class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="group"><span class="group-name">Engagement Cloud</span></li>
+            <li class="product-menu-item" id="product-menu-item-flex"><a href="/console/flex" data-s="flex"
+                                                                         class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-flex"></i><span class="product-name">Flex</span></a><a href="#"
+                                                                                                     class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="product-menu-item" id="product-menu-item-authy"><a href="/console/authy" data-s="authy"
+                                                                          class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-two-factor-authentication"></i><span class="product-name">Authy</span></a><a
+              href="#" class="pull-right pin-icon"><span class="pin-tooltip ui-component-tooltip__anchor"><i
+              class="icon icon-twilio-thumb-tack"></i></span></a></li>
+            <li class="product-menu-item" id="product-menu-item-phone-verification"><a href="/console/verify"
+                                                                                       data-s="phone-verification"
+                                                                                       class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-phone-verification"></i><span class="product-name">Verify</span></a><a
+              href="#" class="pull-right pin-icon"><span class="pin-tooltip ui-component-tooltip__anchor"><i
+              class="icon icon-twilio-thumb-tack"></i></span></a></li>
+            <li class="product-menu-item" id="product-menu-item-taskrouter"><a href="/console/taskrouter"
+                                                                               data-s="taskrouter"
+                                                                               class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-taskrouter"></i><span class="product-name">TaskRouter</span></a><a
+              href="#" class="pull-right pin-icon"><span class="pin-tooltip ui-component-tooltip__anchor"><i
+              class="icon icon-twilio-thumb-tack"></i></span></a></li>
+            <li class="product-menu-item" id="product-menu-item-notify"><a href="/console/notify" data-s="notify"
+                                                                           class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-notify"></i><span class="product-name">Notify</span></a><a href="#"
+                                                                                                         class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="product-menu-item" id="product-menu-item-conversations"><a href="/console/conversations"
+                                                                                  data-s="conversations"
+                                                                                  class="product-menu-item-link"><span
+              style="width: 20px; height: 20px; color: currentcolor; display: inline-block;"><svg role="img"
+                                                                                                  aria-hidden="false"
+                                                                                                  aria-labelledby="leftNav-conversations-product-icon"
+                                                                                                  width="100%"
+                                                                                                  height="100%"
+                                                                                                  viewBox="0 0 32 32"><title
+              id="leftNav-conversations-product-icon">Conversations</title><path fill="currentColor"
+                                                                                 d="M7.9 31.9c-.3 0-.5-.1-.8-.2-.7-.3-1.1-.9-1.1-1.7v-4H2.5C1.1 26 0 24.9 0 23.5v-15C0 7.1 1.1 6 2.5 6H8c3.1 0 5.8 1.8 7 4.6l3.9 9.9c.9 2.1 2.9 3.4 5.2 3.4h5.5c.3 0 .5-.2.5-.5v-15c-.1-.2-.3-.4-.6-.4H24V2.2l-6.3 5.5c-.4.4-1 .3-1.4-.1-.4-.4-.3-1 .1-1.4L22.9.5c.6-.5 1.4-.6 2-.3.7.4 1.1 1 1.1 1.8v4h3.5C30.9 6 32 7.1 32 8.5v15c0 1.4-1.1 2.5-2.5 2.5H24v-.1.1c-3.1 0-5.8-1.9-7-4.7l-3.9-9.9c-.8-2.1-2.8-3.4-5-3.4H2.5c-.3 0-.5.2-.5.5v15c0 .3.2.5.5.5H8v5.8l6.3-5.5c.4-.4 1-.3 1.4.1.4.4.3 1-.1 1.4l-6.5 5.7c-.3.2-.7.4-1.2.4z"></path></svg></span><span
+              class="product-name">Conversations</span></a><a href="#" class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="product-menu-item" id="product-menu-item-proxy"><a href="/console/proxy" data-s="proxy"
+                                                                          class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-proxy"></i><span class="product-name">Proxy</span></a><a href="#"
+                                                                                                       class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="group"><span class="group-name">Runtime</span></li>
+            <li class="product-menu-item" id="product-menu-item-functions"><a href="/console/functions"
+                                                                              data-s="functions"
+                                                                              class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-runtime"></i><span class="product-name">Functions</span></a><a href="#"
+                                                                                                             class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="product-menu-item" id="product-menu-item-studio"><a href="/console/studio" data-s="studio"
+                                                                           class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-studio"></i><span class="product-name">Studio</span></a><a href="#"
+                                                                                                         class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="product-menu-item" id="product-menu-item-assets"><a href="/console/assets" data-s="assets"
+                                                                           class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-docs"></i><span class="product-name">Assets</span></a><a href="#"
+                                                                                                       class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="product-menu-item" id="product-menu-item-twiml-bins"><a href="/console/twiml-bins"
+                                                                               data-s="twiml-bins"
+                                                                               class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-twiml-bins"></i><span class="product-name">TwiML Bins</span></a><a
+              href="#" class="pull-right pin-icon"><span class="pin-tooltip ui-component-tooltip__anchor"><i
+              class="icon icon-twilio-thumb-tack"></i></span></a></li>
+            <li class="product-menu-item" id="product-menu-item-sync"><a href="/console/sync" data-s="sync"
+                                                                         class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-sync"></i><span class="product-name">Sync</span></a><a href="#"
+                                                                                                     class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="product-menu-item" id="product-menu-item-api-explorer"><a href="/console/api-explorer"
+                                                                                 data-s="api-explorer"
+                                                                                 class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-api-explorer"></i><span class="product-name">API Explorer</span></a><a
+              href="#" class="pull-right pin-icon"><span class="pin-tooltip ui-component-tooltip__anchor"><i
+              class="icon icon-twilio-thumb-tack"></i></span></a></li>
+            <li class="product-menu-item" id="product-menu-item-debugger"><a href="/console/debugger" data-s="debugger"
+                                                                             class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-debugger"></i><span class="product-name">Debugger</span></a><a href="#"
+                                                                                                             class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="group"><span class="group-name">Twilio.org</span></li>
+            <li class="product-menu-item" id="product-menu-item-impact-access-program"><a href="/console/twilio-org"
+                                                                                          data-s="impact-access-program"
+                                                                                          class="product-menu-item-link"><span
+              style="width: 20px; height: 20px; color: currentcolor; display: inline-block;"><svg role="img"
+                                                                                                  aria-hidden="false"
+                                                                                                  aria-labelledby="leftNav-twilioorg-product-icon"
+                                                                                                  width="100%"
+                                                                                                  height="100%"
+                                                                                                  viewBox="0 0 24 24"><title
+              id="leftNav-twilioorg-product-icon">Impact Access Program</title><path fill="currentColor"
+                                                                                     fill-rule="evenodd"
+                                                                                     d="M21.904 5.5c.364 0 .656.146.874.437.219.292.292.656.146 1.02l-4.226 12.97c-.219.438-.583.802-1.093.948h-.365c-.364 0-.728-.146-1.02-.437l-2.55-2.55h-4.3l-.655 1.894c-.219.583-.729 1.02-1.385 1.02H1.064c-.365 0-.656-.145-.875-.437-.218-.291-.218-.656-.145-1.02l3.279-9.91c.218-.583.801-1.02 1.384-1.02h3.06l.656-1.895c.219-.583.73-1.02 1.385-1.02zm-.51 1.457H9.808L6.675 16.43h7.286c.219 0 .365.073.51.219l2.77 2.769 4.153-12.46zM7.258 9.872h-2.55l-3.134 9.473H6.82l-1.749-1.676L5 17.596c-.146-.218-.146-.437-.073-.656l2.332-7.068zm4.153-.146a1.323 1.323 0 011.676.146l.802.875.874-.802a1.323 1.323 0 011.676-.146c.073.073.073.073.146.219.51.437.51 1.239 0 1.749l-2.26 2.186c-.218.218-.655.218-.874 0l-2.186-2.332c-.073 0-.073-.073-.145-.146-.438-.583-.292-1.384.291-1.749z"></path></svg></span><span
+              class="product-name">Impact Access Program</span></a><a href="#" class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="group"><span class="group-name">Marketplace</span></li>
+            <li class="product-menu-item" id="product-menu-item-add-ons"><a href="/console/add-ons" data-s="add-ons"
+                                                                            class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-add-ons"></i><span class="product-name">Add-ons</span></a><a href="#"
+                                                                                                           class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="product-menu-item" id="product-menu-item-channels"><a href="/console/channels" data-s="channels"
+                                                                             class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-channels"></i><span class="product-name">Channels</span></a><a href="#"
+                                                                                                             class="pull-right pin-icon"><span
+              class="pin-tooltip ui-component-tooltip__anchor"><i class="icon icon-twilio-thumb-tack"></i></span></a>
+            </li>
+            <li class="group"><span class="group-name">Support</span></li>
+            <li class="product-menu-item" id="product-menu-item-support"><a href="/console/support" data-s="support"
+                                                                            class="product-menu-item-link"><i
+              class="text-lg icon icon-twilio-support"></i><span class="product-name">Support Center</span></a><a
+              href="#" class="pull-right pin-icon"><span class="pin-tooltip ui-component-tooltip__anchor"><i
+              class="icon icon-twilio-thumb-tack"></i></span></a></li>
+            <li class="divider m-t-lg"></li>
+            <li class="twilio-brand"><a href="/"><i class="icon icon-1-5x icon-twilio-logo"></i><span
+              class="product-name">Twilio.com</span></a></li>
+            <li class="divider"></li>
+            <li class="footer text-xs"><p class="m-t-md"><a href="/legal/privacy" data-s="footer-privacy">Privacy
+              Policy</a><span class="m-x">|</span><a href="/legal/tos" data-s="footer-tos">Terms of Service</a></p>
+              <p class="twilio-copyright m-b-0"><a href="/">Twilio</a><!-- react-text: 18 --> © <!-- /react-text -->
+                <!-- react-text: 19 -->2020<!-- /react-text --></p></li>
+          </ul>
+        </div>
+        <ul class="nav nav-stacked" style="overflow-y: hidden;">
+          <li id="left-dock-item-home" class="active"><span class="left-dock-tooltip ui-component-tooltip__anchor"><a
+            href="/console" class=""><i class="icon icon-twilio-home"></i></a></span></li>
+          <li>
+            <hr class="divider" style="display: block;">
+          </li>
+          <li class="dropdown product-menu open"><span class="left-dock-tooltip ui-component-tooltip__anchor"><a
+            href="#"><i id="all-products-icon" class="icon icon-twilio-more"></i></a></span></li>
+        </ul>
+        <div><span class="toggle-icon ui-component-tooltip__anchor"><img
+          src="https://assets.twilio.com/public_assets/console-navigation/1.44.0/js/images/expand-menu.png"></span>
+        </div>
+      </div>
+    </div>
+    <div id="console-tour" data-react="console-tour"></div>
+    <div id="sidebar">
+      <div data-reactroot="" class="sidebar-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

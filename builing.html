@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $("#nav").load("base/header.html");
+    });
+  </script>
+</head>
+
+<body>
+<div id="nav"></div>
+<div class="content_dashboard" style="width: 100%; height: auto;margin-bottom: 48px;margin-top: 100px;margin-left: 200px">
+  <h1 style="font-size: 27px;font-weight: 300;margin: 12px 12px 12px 0">Billing Overview</h1>
+  <div class="building_content">
+    <h4 style="margin: 0">Billing Information</h4>
+    <div class="building_content__1" >
+    <div style="width: 50%; height: auto;">
+    <h4 style="text-transform: uppercase">CURRENT TRIAL BALANCE</h4>
+      <span style="font-size: 30px; color: #29bb4f">+$15.50</span>
+    </div>
+    <div style="width: 50%; height: auto;padding-bottom: 16px">
+      <h5 style="font-size: 17px">Your project is in trial mode</h5>
+      <p style="line-height: 24px">Upgrade now to buy phone numbers, publish your app in the App Gallery, and take over the world.</p>
+      <button class="ui-component-button ui-component-button_style_primary btn " type="button">
+        <span class="ui-component-button__text">Upgrade Now</span></button>
+    </div>
+    </div>
+  </div>
+  <div class="usage__summary">
+  <div class="usage__summary_content" >
+    <div class="usage__summary_title">
+      <h4 style="margin: 0">Usage Summary</h4>
+    </div>
+    <div class="usage__summary_time">
+      <div>
+      <p >As of 15:49:24 UTC 2020-11-25</p>
+      </div>
+      <div class="dropdown">
+        <button  type="button" class="btn btn-primary-outline dropdown-toggle" data-toggle="dropdown">
+          NOV 2020 ^
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Nov 2020</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <h4 class="view_all">View all product usage</h4>
+    <p class="view_all_p" ><a>View all product usage</a></p>
+  </div>
+  </div>
+</body>
+</html>

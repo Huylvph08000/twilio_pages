@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" contentU="width=device-width, user-scalable=no, ">
+  <title>header</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"
+          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+          crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../font/fontawesome-free-5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/header.css">
+  <!--    <link rel="stylesheet" href="css/base.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+</head>
+<body>
+<header class="navbar-fixed-top nav navbar-inverse">
+  <div class="header-top">
+    <div class="user-navigation">
+      <div class="header-user-list">
+        <div class="header-user--item">
+          <a href="/console"><img class="brand-logo"
+                                  src="https://assets.twilio.com/public_assets/console-navigation/1.44.0/js/images/logo-wordmark.svg"
+                                  title="Twilio"></a>
+        </div>
+        <div class="header-user--item" style="display: flex; justify-content: flex-end">
+          <!--DOCS-->
+          <span>
+
+                        <span class="dropdown">
+                            <button class="open-menu-btn btn btn-style ">DOCS
+                                <span class="fas fa-angle-down "></span></button>
+                            <ul class="contentU dropdown-menu" style="z-index: 1060">
+                                <li class="drop-menu-item">
+                                    <a title="QuickStarts" href="/doc/quickstart">Quickstarts</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a title="Guides" href="/doc/guides">Guides</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a title="Tutorials" href="/doc/howto">Tutorials</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a title="Helper Libraries"
+                                       href="/doc/libraries">Helper Libraries</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a title="API Docs" href="/doc/api">API Docs</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a title="SDKs" href="/doc/libraries">SDKs</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a title="TwilioQuest" href="/doc/quest">TwilioQuest</a>
+                                </li>
+                            </ul>
+
+                    </span>
+                    <spanv clas="dropdown">
+                        <button class=" open-menu-btn-visible btn-style btn btn-primary dropdown-toggle  pull-right"
+                                type="button" data-toggle="dropdown">
+                            <span class="far fa-file"></span></button>
+                        <ul class="contentU dropdown-menu " style="z-index: 2000">
+                                <li class="drop-menu-item">
+                                    <a title="QuickStarts" href="/doc/quickstart">Quickstarts</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a title="Guides" href="/doc/guides">Guides</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a title="Tutorials" href="/doc/howto">Tutorials</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a title="Helper Libraries"
+                                       href="/doc/libraries">Helper Libraries</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a title="API Docs" href="/doc/api">API Docs</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a title="SDKs" href="/doc/libraries">SDKs</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a title="TwilioQuest" href="/doc/quest">TwilioQuest</a>
+                                </li>
+                            </ul>
+                    </spanv>
+                </span>
+          <!--USER-->
+          <span>
+                    <span  class=" dropdown ">
+                        <button class="open-menu-btn btn btn-style   dropdown-toggle" type="button"
+                                data-toggle="dropdown">USER
+                            <span class="fas fa-angle-down "></span></button>
+                        <ul class="content-user dropdown-menu" style="z-index: 2000">
+                            <li class="drop-menu-item">
+                                <a title="User Setting" href="/console/user/setting">User Setting</a>
+                            </li>
+                            <li class="drop-menu-item divider"></li>
+                            <li class="drop-menu-item">
+                                <a title="Logout" href="/logout?g=/">Guides</a>
+                            </li>
+                        </ul>
+                    </span>
+                    <span class="dropdown">
+                        <button class=" open-menu-btn-visible btn-style btn btn-primary dropdown-toggle  pull-right"
+                                type="button" data-toggle="dropdown">
+                            <span class="far fa-user"></span></button>
+                        <ul class="content-user dropdown-menu" style="z-index: 2000">
+                            <li class="drop-menu-item">
+                                <a title="User Setting" href="/console/user/setting">User Setting</a>
+                            </li>
+                            <li class="drop-menu-item diver"></li>
+                            <li class="drop-menu-item">
+                                <a title="Logout" href="/logout?g=/">Guides</a>
+                            </li>
+                        </ul>
+
+                    </span>
+                </span>
+        </div>
+      </div>
+    </div>
+    <!--PROJECT HEADER-->
+    <div class="header-project ">
+      <div class="header-project-list ">
+        <div class="header-project-item" style="display: flex; flex: 1 1 auto">
+                        <span>
+                            <span>
+                                <span class="dropdown">
+                            <button class=" btn btn-style dropdown-toggle" type="button"
+                                    data-toggle="dropdown"
+                                    style="bottom: -7px; left: 25px; color: black; background-color: #e6e6e6">
+                                <span class="text"> My first Twilio...
+                                    <span class="TRAIL">TRAIL</span>
+                                </span>
+                                 <i class="fas fa-angle-down icon"></i>
+                            </button>
+                            <ul class="contentUL dropdown-menu " style="z-index: 2000">
+                                <li class="drop-menu-item">
+                                    <a style="line-height: 35px; background-color: #fff; color: black"
+                                       title="My first Twilio project"
+                                       href="/doc/quickstart">My first Twilio project</a>
+                                </li>
+                                <li class="drop-menu-item divider  " style="background-color: #e6e6e6"></li>
+                                <li class="drop-menu-item">
+                                    <a style="line-height: 35px; background-color: #fff; color: black"
+                                       title="View All Projects" href="/doc/quickstart">View All Projects</a>
+                                </li>
+                                <li class="drop-menu-item divider  " style="background-color: #e6e6e6"></li>
+                                <li class="drop-menu-item">
+                                    <a style="line-height: 35px; background-color: #fff; color: black"
+                                       title="Create New Project" href="/doc/quickstart">Create New Project</a>
+                                </li>
+                            </ul>
+                        </span>
+
+                            </span>
+                        </span>
+
+
+        </div>
+        <div class="header-project-item project-container">
+          <div style="display: flex ;">
+            <ul class="upgrade-project pull-right">
+              <a href="/console/billing/upgrade" class="btn-upgrade">Upgrade Project</a>
+            </ul>
+            <div class="search-container">
+
+              <!--search-->
+              <div class="search pull-right">
+                <input type="text" class="form-control " placeholder="Go to..."
+                       onclick="document.getElementById('id01').style.display='block'"
+                       class="open-modal">
+                <span class="fa fa-search icon-search"></span>
+              </div>
+              <!--search visible-->
+              <div class="search-visible pull-right ">
+                <button onclick="myFunction()" class=" search-visible  " type="button"
+
+                ><i class="fa fa-search small-search-icon"></i>
+                </button>
+                <ul id="mySearch" class="search-bar-visible dropdown-menu" style="display: none">
+                  <li class="drop-search">
+                    <input type="text" class="form-control " placeholder="Go to...">
+                    <span class="fa fa-search icon-search " style="bottom: 5px"></span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="header-project-tools">
+                    <span class="dropdown">
+                            <button class="btn btn-style tools dropdown-toggle" type="button"
+                                    data-toggle="dropdown" title="Debugger">
+                                <span class="fas fa-bug "></span></button>
+                            <ul class="contentU content-tools dropdown-menu">
+                                <li class="drop-menu-item">
+                                    <a style="color: #aeaeae;background-color: white" title="Go to the Debugger"
+                                       href="/console/debugger">Go to the Debugger</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a style="color: #aeaeae;background-color: white" title="Mute Notification"
+                                       href="#">Mute Notification</a>
+                                </li>
+
+                            </ul>
+
+                    </span>
+            <span class="dropdown">
+                            <button class="btn btn-style tools dropdown-toggle" type="button"
+                                    data-toggle="dropdown" title="Help">
+                                <span class="fas fa-question"></span></button>
+                            <ul class="contentU content-tools  dropdown-menu">
+                                <li class="drop-menu-item">
+                                    <a style="color: #aeaeae;background-color: white" title="Support Centre"
+                                       href="/console/support">Support Centre</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a style="color: #aeaeae;background-color: white" title="Support Plans"
+                                       href="/console/support/plans">Support Plans</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a style="color: #aeaeae;background-color: white" title="Submit a Ticket"
+                                       href="/console/support/tickets/create">Submit a Ticket</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a style="color: #aeaeae;background-color: white" title="Ticket History"
+                                       href="/console/support/tickets">Ticket History</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a style="color: #aeaeae;background-color: white" title="Give Feedback"
+                                       href="/doc/guides">Give Feedback</a>
+                                </li>
+                            </ul>
+
+                    </span>
+            <span class="dropdown">
+                            <button class="btn btn-style tools dropdown-toggle" type="button"
+                                    data-toggle="dropdown" title="SettingSetting">
+                                <span class="fas fa-cog "></span></button>
+                            <ul class="contentU content-tools  dropdown-menu">
+                                <li class="drop-menu-item">
+                                    <a style="color: #aeaeae;background-color: white" title="Setting"
+                                       href="/doc/quickstart">Setting</a>
+                                </li>
+                                <li class="drop-menu-item">
+                                    <a style="color: #aeaeae;background-color: white" title="Subaccounts"
+                                       href="/doc/guides">Subaccounts</a>
+                                </li>
+
+                            </ul>
+
+                    </span>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!--Modal-->
+    <div class="overlay">
+      <div
+        id="id01" class="modal">
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+</header>
+
+
+
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("mySearch");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+    var modal = document.getElementById('id01');
+    modal.style.display = "block";
+    window.onclick = function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+        x.style.display = "none";
+      }
+
+    }
+  }
+</script>
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
+
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;    function toggle(el, el1) {&ndash;&gt;-->
+<!--&lt;!&ndash;        var tag = document.getElementById(el);&ndash;&gt;-->
+<!--&lt;!&ndash;        var tag2 = document.getElementById(el1);&ndash;&gt;-->
+<!--&lt;!&ndash;        tag.style.display = tag.style.display === 'block' ? 'none' : 'block';&ndash;&gt;-->
+<!--&lt;!&ndash;        tag2.style.display = 'none';&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;    function toggle(el, el1) {&ndash;&gt;-->
+<!--&lt;!&ndash;        var tag = document.getElementById(el);&ndash;&gt;-->
+<!--&lt;!&ndash;        var tag2 = new Array();&ndash;&gt;-->
+<!--&lt;!&ndash;        tag.style.display = tag.style.display === 'block' ? 'none' : 'block';&ndash;&gt;-->
+<!--&lt;!&ndash;        tag2.style.display = 'none';&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;</script>&ndash;&gt;-->

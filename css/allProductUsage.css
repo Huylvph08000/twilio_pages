@@ -1,0 +1,194 @@
+.usage-summary > h1 {
+  margin-top: 0;
+}
+
+.h1, .h2, h1, h2 {
+  font-weight: 300;
+}
+
+.css-rwxw93 {
+  color: #282a2b;
+  font-size: 0.875rem;
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.usage-summary__disclaimer {
+  margin-bottom: 12px;
+}
+
+.disclaimer__component {
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.disclaimer__component > .disclaimer__component--text {
+  padding-right: 8px;
+}
+
+.disclaimer__component {
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.ui-component-tooltip__anchor {
+  display: inline-block;
+}
+
+.disclaimer__component {
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.ui-component-icon, .ui-component-icon *, .ui-component-icon :after, .ui-component-icon :before {
+  box-sizing: border-box;
+}
+
+.ui-component-icon {
+  display: inline-block;
+  line-height: 0;
+}
+
+i {
+  font-style: italic;
+}
+
+.icon-twilio-error:before, .icon-twilio-information:before, .icon-twilio-warning:before {
+  color: #008cff;
+}
+
+.usage-summary-overview__header {
+  background-color: #f6f6f6;
+  padding: 12px;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.usage-summary-overview__filters {
+  display: flex;
+  align-items: center;
+}
+
+.ui-component-dropdown {
+  position: relative;
+}
+
+.usage-summary-overview__filters--date {
+  margin-right: 12px;
+}
+
+.usage-summary-overview__as-of-date-text {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  line-height: 20px;
+  font-size: 14px;
+  color: #222;
+}
+
+.usage-summary-overview__body {
+  color: #222;
+  border: 1px solid #e6e6e6;
+  border-top: none;
+}
+
+.ui-component-table {
+  font-family: Whitney SSm A, Whitney SSm B, Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.42857143;
+  font-size: 14px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+table {
+  background-color: transparent;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.ui-component-table {
+  font-family: Whitney SSm A, Whitney SSm B, Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.42857143;
+  font-size: 14px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.ui-component-table-row__cell.ui-component-table-row__cell_capitalized {
+  text-transform: uppercase;
+}
+
+.ui-component-table thead tr th {
+  color: #666;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.ui-component-table tfoot tr td, .ui-component-table thead tr th {
+  background-color: #f6f6f6;
+  border-bottom: none;
+}
+
+.ui-component-table tbody tr td, .ui-component-table tbody tr th, .ui-component-table tfoot tr td, .ui-component-table tfoot tr th, .ui-component-table thead tr td, .ui-component-table thead tr th {
+  padding: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+  vertical-align: middle;
+  border-top: none;
+  border-bottom: 1px solid #e6e6e6;
+  word-wrap: break-word;
+  line-height: 1.42857143;
+}
+
+.usage-summary-overview__usage-left-col {
+  text-align: left;
+}
+
+.ui-component-table-row__cell.ui-component-table-row__cell_capitalized {
+  text-transform: uppercase;
+}
+
+.ui-component-table thead tr th {
+  color: #666;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.usage-summary-overview__usage-right-col {
+  text-align: right;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.usage-summary-overview__body b {
+  font-weight: 500;
+}
+
+.ui-component-table-row__cell {
+  text-align: left;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+/*# sourceMappingURL=allProductUsage.css.map */

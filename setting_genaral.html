@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/setting_genaral.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $("#header").load("base/header.html");
+
+    });
+  </script>
+</head>
+<body>
+<div id="nav"></div>
+<div style="margin-top: 100px; margin-left: 8%" class="web">
+  <div id="content" class="col-md-24 p-r-md col-offset-sidebar" style="padding-bottom: initial;">
+    <noscript>
+      <div class="alert alert-warning" data-s="warning-javascript">
+        <a href="https://www.twilio.com/console">Twilio Portal</a> is designed for javascript enabled browsers. Please
+        enable javascript before proceeding.
+      </div>
+    </noscript>
+    <div id="alert-container" class="" data-s="flash-messages" style="width: 1106px;"></div>
+    <div id="announcements"></div>
+    <header>
+      <h1></h1>
+      <h1 id="header">General Settings</h1>
+    </header>
+    <form method="post" class="form-horizontal">
+      <section>
+        <h3>Properties</h3>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Project Name:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" style="width: 35%" id="email" placeholder="Enter email" name="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">AccountID:</label>
+          <div class="col-sm-10">
+            AC9575b804c034946c66246dff2ae96476
+          </div>
+        </div>
+        <!--      <div class="form-group"><label class="col-sm-3 control-label" for="id"> Account Sid </label>-->
+        <!--        <div class="col-sm-10 form-control-static" id="id"> AC9575b804c034946c66246dff2ae96476</div>-->
+        <!--      </div>-->
+      </section>
+      <section class="two-factor-auth" id="two-factor-auth"><h3>Require Two-Factor Authentication (2FA)</h3>
+        <p>Add an extra layer of protection to Twilio accounts. <br>Once you enable 2FA, all users accessing this account
+          must enter verification codes sent on the channel they prefer. <br>To enable 2FA for yourself, go to <a
+                  href="/console/user/settings">User Settings</a>. </p>
+        <div class="form-group">
+          <div class="col-sm-24">
+            <div class="radio"><label><input type="radio" id="twoFactorAuthModeOncePerComputer" name="twoFactorAuthMode"
+                                             value="1"
+                                             helpblock="Trust computers and only ask for verification code every 30 days"
+                                             class="sl_whiteout"> Once Per Computer </label><span class="help-block">Trust computers and only ask for verification code every 30 days</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-24">
+            <div class="radio"><label><input type="radio" id="twoFactorAuthModeEveryLogIn" name="twoFactorAuthMode"
+                                             value="2" helpblock="We'll always ask for a verification code"
+                                             class="sl_whiteout"> Every Log-in </label><span class="help-block">We'll always ask for a verification code</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-24">
+            <div class="radio"><label class="checked"><input type="radio" id="twoFactorAuthModeDisabled"
+                                                             name="twoFactorAuthMode" value="0" checked="checked"
+                                                             helpblock="Do not require a verification code"
+                                                             class="sl_whiteout"> Disabled </label><span
+                    class="help-block">Do not require a verification code</span></div>
+          </div>
+        </div>
+      </section>
+      <section id="api-credentials"><h3>API Credentials</h3>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-sm-8"><h3 class="panel-title">LIVE Credentials</h3></div>
+                  <div class="col-sm-16 text-xs text-right"><a href="/docs/api/rest/request" id="rest-api-learn-more"
+                                                               class="link-secondary external-link" target="_blank"> Learn
+                    about REST API <i class="fas fa-directions"></i></a></div>
+                </div>
+              </div>
+              <div class="panel-body">
+                <dl>
+                  <dt class="notranslate">Account SID</dt>
+                  <dd>
+                    <div class="notranslate text-code text-md" id="account-sid">AC9575b804c034946c66246dff2ae96476</div>
+                    <small class="text-muted">Used to exercise the REST API</small></dd>
+                  <dt class="notranslate m-t-md">Auth Token</dt>
+                  <dd>
+                    <div role="secure-auth-token" class="sl_whiteout"><span data-token-tooltip="true"
+                                                                            data-original-title="" title=""><div
+                            class="lock-container" data-s="toggle-auth-token"><i class="lock icon icon-twilio-view icon-1-5x fas fa-eye"
+                                                                                 data-s="auth-token-lock"></i></div><span
+                            type="password" class="auth-token" value="837209816764f9ad16d65760d854cdbf" data-s="auth-token"
+                            autocomplete="off" readonly="readonly">837209816764f9ad16d65760d854cdbf</span></span></div>
+                    <small><a href="#request-token-modal" data-toggle="modal" id="reset-auth-token-link">Request a
+                      Secondary Token</a></small></dd>
+                </dl>
+                <div class="text-muted m-t"><small>Keep this somewhere safe and secure</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-sm-8"><h3 class="panel-title">TEST Credentials</h3></div>
+                  <div class="col-sm-16 text-sm text-right"><a href="/docs/api/rest/test-credentials"
+                                                               id="test-credentials-learn-more"
+                                                               class="link-secondary external-link" target="_blank"> Learn
+                    about Test Credentials<i class="fas fa-directions"></i></a></div>
+                </div>
+              </div>
+              <div class="panel-body">
+                <dl>
+                  <dt class="notranslate">Test Account SID</dt>
+                  <dd>
+                    <div class="notranslate text-code text-md" id="test-account-sid">AC91379f5786e54c92b04e4350174e570b
+                    </div>
+                    <small class="text-muted">Used to exercise the REST API</small></dd>
+                  <dt class="notranslate m-t-md">Test AuthToken</dt>
+                  <dd>
+                    <div role="secure-auth-token" class="sl_whiteout"><span data-token-tooltip="true"
+                                                                            data-original-title="" title=""><div
+                            class="lock-container" data-s="toggle-auth-token"><i class="fas fa-eye"></i></div><span
+                            type="password" class="auth-token" value="a1c85469d38f7c445237f53280e39714" data-s="auth-token"
+                            autocomplete="off" readonly="readonly">a1c85469d38f7c445237f53280e39714</span></span></div>
+                  </dd>
+                </dl>
+                <div class="text-muted m-t"><small>Keep this somewhere safe and secure</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ssl-certificate-validation" id="ssl-certificate-validation"><h3>SSL Certificate Validation</h3>
+        <p>Determines if certificate validation is performed on all Twilio originated requests.</p>
+        <div class="form-group">
+          <div class="col-sm-24">
+            <div class="radio"><label class="checked"><input type="radio" id="sslCertificateValidationEnabled"
+                                                             name="sslCertificateValidation" value="1" checked="checked"
+                                                             helpblock="Enforces Certificate Validation on webhooks from Twilio to your servers. Twilio does not at this time support self-signed certificates."
+                                                             class="sl_whiteout"> Enabled </label><span
+                    class="help-block">Enforces Certificate Validation on webhooks from Twilio to your servers. Twilio does not at this time support self-signed certificates.</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-24">
+            <div class="radio"><label><input type="radio" id="sslCertificateValidationDisabled"
+                                             name="sslCertificateValidation" value="0"
+                                             helpblock="Does not enforce certificate validation on webhooks from Twilio to your servers. This is not recommended for production services and should only be used during development."
+                                             class="sl_whiteout"> Disabled </label>
+              <span class="help-block">Does not enforce certificate validation on webhooks from Twilio to your servers. This is not recommended for production services and should only be used during development.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section><h3>Public Key Client Validation</h3>
+        <p> Public Key Client Validation provides an additional layer of security by validating the origin and integrity
+          of the request being sent to Twilio. This is achieved by sharing a public key with Twilio and then signing each
+          request with the associated private key. </p>
+        <div class="well"><h3>Client Validation is an Enterprise feature</h3>
+          <a href="/enterprise" class="btn btn-default external-link">
+            Learn more about Enterprise<i class="fas fa-directions"></i></a></div>
+      </section>
+      <div class="command-bar" role="command-bar"
+           style="position: relative; left: inherit; right: inherit; margin: 60px 0px 0px;">
+        <button type="submit" class="btn btn-primary btn-filled" disabled="disabled">Save</button>
+        <a href="/console/project/settings" class="btn btn-default">Cancel</a><span id="close-account-link"><a href="#"
+                                                                                                               data-toggle="modal"
+                                                                                                               data-target="#close-account-modal"
+                                                                                                               data-loading-text="Loading...">Close Project</a></span>
+      </div>
+    </form>
+    <form action="/console/project/settings/secondary-auth-token" method="post" role="reset-auth-token-modal modal"
+          id="request-token-modal" class="form-horizontal modal fade" tabindex="-1"
+          aria-labelledby="request-token-modal-label" aria-hidden="true" autocomplete="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><span
+                    class="icon icon-twilio-close"></span></button>
+            <h3 id="request-token-modal-label" class="modal-title">Request a Secondary Token</h3></div>
+          <div class="modal-body">
+            <div class="modal-body-alerts"></div>
+            <p>This will generate a secondary auth token for use as a backup or during key rotation.</p></div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="btn btn-default">Cancel</button>
+            <button type="submit" class="btn btn-primary btn-filled">Request Token</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form action="/console/project/settings/secondary-auth-token/promote" method="post"
+          role="promote-auth-token-modal modal" id="promote-token-modal" class="form-horizontal modal fade" tabindex="-1"
+          aria-labelledby="promote-token-modal-label" aria-hidden="true" autocomplete="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><span
+                    class="icon icon-twilio-close"></span></button>
+            <h3 id="promote-token-modal-label" class="modal-title">Promote Secondary to Primary Token</h3></div>
+          <div class="modal-body">
+            <div class="modal-body-alerts"></div>
+            <p><strong>Careful.</strong> Promoting this token means that the primary token will be deleted and any
+              subsequent API requests using that token will fail.</p>
+            <div class="form-group">
+              <div class="col-sm-19 col-sm-offset-5">
+                <div class="checkbox"><label><input type="checkbox" id="promote-token-acknowledgement"
+                                                    name="acknowledgement" class="sl_whiteout"> I acknowledge the
+                  repercussions of this action. </label></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="btn btn-default">Cancel</button>
+            <button type="submit" class="btn btn-primary btn-filled">Promote Token</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form action="/console/project/settings/secondary-auth-token/delete" method="post"
+          role="delete-auth-token-modal modal" id="delete-token-modal" class="form-horizontal modal fade" tabindex="-1"
+          aria-labelledby="delete-token-modal-label" aria-hidden="true" autocomplete="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><span
+                    class="icon icon-twilio-close"></span></button>
+            <h3 id="delete-token-modal-label" class="modal-title">Delete Secondary Token</h3></div>
+          <div class="modal-body">
+            <div class="modal-body-alerts"></div>
+            <p><strong>Careful.</strong> Deleting this token means that any API requests using this token will fail.</p>
+            <div class="form-group">
+              <div class="col-sm-19 col-sm-offset-5">
+                <div class="checkbox"><label><input type="checkbox" id="delete-token-acknowledgement"
+                                                    name="acknowledgement" class="sl_whiteout"> I acknowledge the
+                  repercussions of this action. </label></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="btn btn-default">Cancel</button>
+            <button type="submit" class="btn btn-primary btn-filled">Delete Token</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form action="/console/project/settings/close-account" method="post"
+          role="close-account-modal close-account-form-close-account ajax ensure-required modal"
+          data-s="close-trial-project-form" class="form-horizontal modal fade" id="close-account-modal" tabindex="-1"
+          aria-labelledby="close-account-modal-label" aria-hidden="true" autocomplete="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><span
+                    class="icon icon-twilio-close"></span></button>
+            <h3 id="close-account-modal-label" class="modal-title">Close Project - My first Twilio project</h3></div>
+          <div class="modal-body">
+            <div class="modal-body-alerts"></div>
+            <input type="hidden" id="close-nonupgraded" name="close-account-action" value="close-account"
+                   class="form-control sl_whiteout">
+            <div class="form-group m-l-sm"><h4><strong>Please acknowledge the following:</strong></h4>
+              <section>
+                <div class="checkbox"><label><input type="checkbox" id="close-nonupgraded-warning-subaccounts"
+                                                    name="warning-subaccounts" required="required"
+                                                    role="close-acknowledgement" class="sl_whiteout"> You will immediately
+                  lose access to this Project and its subaccounts. API requests will fail. </label></div>
+                <div class="checkbox"><label><input type="checkbox" id="close-nonupgraded-warning-charges"
+                                                    name="warning-charges" required="required"
+                                                    role="close-acknowledgement" class="sl_whiteout"> Recurring charges
+                  will stop and no new charges will be incurred. </label></div>
+                <div class="checkbox"><label><input type="checkbox" id="close-nonupgraded-warning-numbers"
+                                                    name="warning-numbers" required="required"
+                                                    role="close-acknowledgement" class="sl_whiteout"> Twilio will release
+                  phone numbers, short codes and other associated resources. (<a
+                          href="https://support.twilio.com/hc/en-us/articles/360010066814" target="_blank"
+                          class="external-link"><span>See the full list</span><i
+                          class="icon icon-twilio-external-link text-middle m-l-xs"></i></a>). </label></div>
+                <div class="checkbox"><label><input type="checkbox" id="close-nonupgraded-warning-deletion"
+                                                    name="warning-deletion" required="required"
+                                                    role="close-acknowledgement" class="sl_whiteout"> The Project and all
+                  associated data will be scheduled for deletion. </label></div>
+              </section>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="btn btn-default">Cancel</button>
+            <button type="submit" class="btn btn-primary btn-filled" role="close-upgraded-account" disabled="">Close
+              Project
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div id="close-account-modal-original-label" class="hide">Close Project My first Twilio project</div>
+    <div id="close-account-modal-close-account" class="hide">
+      <form id="close-account-form-close-account" method="post" action="/console/project/settings/close-account"
+            role="close-account-form-close-account ajax ensure-required"
+            data-s="close-upgraded-account-modal-close-account">
+        <div class="modal-body"><input type="hidden" id="close-upgraded" name="close-account-action" value="close-account"
+                                       class="form-control sl_whiteout">
+          <div class="form-group m-l-sm"><h4><strong>Please acknowledge the following:</strong></h4>
+            <section>
+              <div class="checkbox"><label><input type="checkbox" id="close-upgraded-warning-subaccounts"
+                                                  name="warning-subaccounts" required="required"
+                                                  role="close-acknowledgement" class="sl_whiteout"> You will immediately
+                lose access to this Project and its subaccounts. API requests will fail. </label></div>
+              <div class="checkbox"><label><input type="checkbox" id="close-upgraded-warning-charges"
+                                                  name="warning-charges" required="required" role="close-acknowledgement"
+                                                  class="sl_whiteout"> Recurring charges will stop and no new charges will
+                be incurred. </label></div>
+              <div class="checkbox"><label><input type="checkbox" id="close-upgraded-warning-numbers"
+                                                  name="warning-numbers" required="required" role="close-acknowledgement"
+                                                  class="sl_whiteout"> Twilio will release phone numbers, short codes and
+                other associated resources. (<a href="https://support.twilio.com/hc/en-us/articles/360010066814"
+                                                target="_blank" class="external-link"><span>See the full list</span><i
+                        class="icon icon-twilio-external-link text-middle m-l-xs"></i></a>). </label></div>
+              <div class="checkbox"><label><input type="checkbox" id="close-upgraded-warning-deletion"
+                                                  name="warning-deletion" required="required" role="close-acknowledgement"
+                                                  class="sl_whiteout"> The Project and all associated data will be
+                scheduled for deletion. </label></div>
+            </section>
+          </div>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="button" data-dismiss="modal" aria-hidden="true" class="btn btn-default">Cancel</button>
+          <button type="submit" class="btn btn-primary btn-filled" role="close-upgraded-account" disabled="">Close
+            Project
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="close-account-modal-release-account" class="hide">
+      <form id="close-account-form-release-account" method="post" action="/console/project/settings/close-account"
+            role="close-account-form-close-account ajax ensure-required"
+            data-s="close-upgraded-account-modal-close-account">
+        <div class="modal-body"><input type="hidden" id="release-account-body" name="close-account-action"
+                                       value="stop-charges" class="form-control sl_whiteout">
+          <div class="form-group m-l-sm"><h4><strong>Please acknowledge the following:</strong></h4>
+            <section>
+              <div class="checkbox"><label><input type="checkbox" id="release-account-warning-charges"
+                                                  name="warning-charges" required="required" role="close-acknowledgement"
+                                                  class="sl_whiteout"> Confirm you want to release all items from your
+                Project with a recurring fee, such as phone numbers and call recordings (<a
+                        href="https://support.twilio.com/hc/en-us/articles/360010066814" target="_blank"
+                        class="external-link"><span>See the full list</span><i
+                        class="icon icon-twilio-external-link text-middle m-l-xs"></i></a>). This cannot be undone. </label>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="button" data-dismiss="modal" aria-hidden="true" class="btn btn-default">Cancel</button>
+          <button type="submit" class="btn btn-primary btn-filled" role="release-upgraded-account" disabled="">Continue
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

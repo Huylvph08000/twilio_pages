@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/upgrade.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<script>
+  $(function () {
+    $("#nav").load("base/header.html");
+  });
+</script>
+<body>
+<div id="nav"></div>
+<div>
+
+  <header style="margin-top: 100px;margin-left: 20%" class="ui-component-pageheader"><p class="ui-component-pageheader__visible-print-block">My first Twilio
+    project</p>
+    <h1 class="ui-component-pageheader__title">Upgrade Account</h1></header>
+  <div style="margin-left: 20%" class="upgrade__accordion">
+    <div class="ui-component-accordion">
+      <div
+        class="ui-component-accordion__panel ui-component-accordion__panel_inactive ui-component-accordion__panel_disabled ui-component-accordion__panel_animated ">
+        <div class="heading">
+          <div class="heading__title">Verify Phone Number - You've verified 0388 337 546</div>
+
+          <div class="heading__status"><i
+            class="ui-component-icon ui-component-icon_size_null icon-twilio-success fas fa-check-circle"></i></div>
+          <div class="heading__action"><i
+            class="fas fa-angle-up ui-component-icon ui-component-icon_size_null icon-twilio-dropdown heading__action-icon heading__action-icon_animated"></i>
+          </div>
+        </div>
+        <div
+          class="ui-component-accordion__body ui-component-accordion__body_disabled ui-component-accordion__body_animated">
+          <div></div>
+        </div>
+      </div>
+      <div class="ui-component-accordion__panel ui-component-accordion__panel_animated ">
+        <div class="heading">
+          <div class="heading__title">Add Company Address</div>
+          <div class="fas fa-angle-up heading__action"><i
+            class="ui-component-icon ui-component-icon_size_null icon-twilio-dropdown heading__action-icon heading__action-icon_active heading__action-icon_animated"></i>
+          </div>
+        </div>
+        <div class="ui-component-accordion__body ui-component-accordion__body_animated">
+          <div class="address-component">
+            <div class="ui-component-grid">
+              <div class="ui-component-col">
+                <div class="address-element__country">
+                  <div class="address-element__country__label-container">
+                    <div class="billing_countries_dropdown">
+                      <div class="ui-component-dropdown__container"><span class="ui-component-dropdown"><span
+                        class="ui-component-dropdown__toggle"><button
+                        class="btn ui-component-dropdown__button ui-component-dropdown__button_style_default ui-component-country-flag__button ui-component-country-flag__button_style_with-flagname ui-component-country-flag ui-component-country-flag_us"
+                        type="button">United States <i
+                        class="fas fa-angle-up icon icon-twilio-dropdown ui-component-dropdown__button-icon"></i></button></span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-component-col-12_md-12">
+                <div class="address-element__attention-to">
+                  <div class="address-element__attention-to__label-container"><label for="attentionTo">Attention
+                    To</label></div>
+                  <div class="address-element__attention-to__input-container"><input name="attentionTo" type="text"
+                                                                                     maxlength="255" value=""></div>
+                </div>
+              </div>
+              <div class="ui-component-col-12_md-12">
+                <div class="address-element__address1">
+                  <div class="address-element__address1__label-container"><label for="address1">Address</label></div>
+                  <div class="address-element__address1__input-container"><input name="address1" type="text" required=""
+                                                                                 maxlength="255"
+                                                                                 placeholder="Add your street here (required)"
+                                                                                 value=""></div>
+                </div>
+              </div>
+              <div class="ui-component-col-12_md-12">
+                <div class="address-element__address2">
+                  <div class="address-element__address2__input-container"><input name="address2" type="text"
+                                                                                 maxlength="255"
+                                                                                 placeholder="Add unit/suite information here"
+                                                                                 value=""></div>
+                </div>
+              </div>
+              <div class="ui-component-col-4_md-12">
+                <div class="address-element__city">
+                  <div class="address-element__city__label-container"><label for="city">City*</label></div>
+                  <div class="address-element__city__input-container"><input name="city" type="text" required=""
+                                                                             maxlength="255" value=""></div>
+                </div>
+              </div>
+              <div class="ui-component-col-4_md-12">
+                <div class="address-element__province">
+                  <div class="address-element__province__label-container"><label for="province">State*</label></div>
+                  <div class="address-element__province__input-container"><input name="province" type="text" required=""
+                                                                                 maxlength="255" value=""></div>
+                </div>
+              </div>
+              <div class="ui-component-col-4_md-12">
+                <div class="address-element__postal-code">
+                  <div class="address-element__postal-code__label-container"><label for="postalCode">Zip Code*</label>
+                  </div>
+                  <div class="address-element__postal-code__input-container"><input name="postalCode" type="text"
+                                                                                    required="" maxlength="255"
+                                                                               value=""></div>
+                </div>
+              </div>
+              <div class="ui-component-col-12">
+                <div class="address-element__business-tax-id">
+                  <div class="address-element__business-tax-id__label-container"><label for="taxId">
+                    <div class="address-element__business-tax-id__label-container__text-wrap">Business Tax ID</div>
+                    <span class=" ui-component-tooltip__anchor"><a href="#"><i
+                      class="fas fa-question-circle ui-component-icon ui-component-icon_size_null icon-twilio-question "></i></a></span></label>
+                  </div>
+                  <div class="address-element__business-tax-id__radio-container">
+                    <div class="address-element__business-tax-id__radio-container__wrapper">
+                      <div class="address-element__business-tax-id__radio-container__wrapper--negative-confirmation">
+                        <div class="ui-component-radio"><label
+                          class="ui-component-radio__label ui-component-radio__label_checked"><span
+                          class="ui-component-radio__wrap"><input type="radio" class="ui-component-radio__input" name=""
+                                                                  value="paymentMethod"><span
+                          class="ui-component-radio__checkmark ui-component-radio__checkmark_checked"></span></span><span
+                          class="ui-component-radio__label-text">I do not have a Business Tax ID</span></label></div>
+                      </div>
+                    </div>
+                    <div class="address-element__business-tax-id__radio-container__wrapper">
+                      <div class="address-element__business-tax-id__radio-container__wrapper--positive-confirmation">
+                        <div class="ui-component-radio"><label class="ui-component-radio__label"><span
+                          class="ui-component-radio__wrap"><input type="radio" class="ui-component-radio__input" name=""
+                                                                  value="paymentMethod"><span
+                          class="ui-component-radio__checkmark"></span></span><span
+                          class="ui-component-radio__label-text">I have a Business Tax ID</span></label></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="address-element__business-tax-id__input-container"><input disabled=""
+                                                                                        class="form-control sl_whiteout address-element__business-tax-id__input-container__input"
+                                                                                        type="text" value=""
+                                                                                        style="display: none;"></div>
+                </div>
+              </div>
+              <div>
+                <button class="ui-component-button ui-component-button_style_primary btn upgrade__address-button"
+                        type="button"><span class="ui-component-button__text">Validate Address</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ui-component-accordion__panel ui-component-accordion__panel_inactive ui-component-accordion__panel_animated ">
+        <div class="heading">
+          <div class="heading__title">Add Billing Address</div>
+          <div class="heading__action"><i
+            class="ui-component-icon ui-component-icon_size_null icon-twilio-dropdown heading__action-icon heading__action-icon_animated"></i>
+          </div>
+        </div>
+        <div
+          class="ui-component-accordion__body ui-component-accordion__body_disabled ui-component-accordion__body_animated">
+          <div class="address-component">
+            <div class="ui-component-grid">
+              <div class="ui-component-col">
+                <div class="address-element__country">
+                  <div class="address-element__country__label-container">
+                    <div class="billing_countries_dropdown">
+                      <div class="ui-component-dropdown__container"><span class="ui-component-dropdown"><span
+                        class="ui-component-dropdown__toggle"><button
+                        class="btn ui-component-dropdown__button ui-component-dropdown__button_style_default ui-component-country-flag__button ui-component-country-flag__button_style_with-flagname ui-component-country-flag ui-component-country-flag_us"
+                        type="button">United States <i
+                        class="icon icon-twilio-dropdown ui-component-dropdown__button-icon"></i></button></span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-component-col-12_md-12">
+                <div class="address-element__attention-to">
+                  <div class="address-element__attention-to__label-container"><label for="attentionTo">Attention
+                    To</label></div>
+                  <div class="address-element__attention-to__input-container"><input name="attentionTo" type="text"
+                                                                                     maxlength="255" value=""></div>
+                </div>
+              </div>
+              <div class="ui-component-col-12_md-12">
+                <div class="address-element__address1">
+                  <div class="address-element__address1__label-container"><label for="address1">Address</label></div>
+                  <div class="address-element__address1__input-container"><input name="address1" type="text" required=""
+                                                                                 maxlength="255"
+                                                                                 placeholder="Add your street here (required)"
+                                                                                 value=""></div>
+                </div>
+              </div>
+              <div class="ui-component-col-12_md-12">
+                <div class="address-element__address2">
+                  <div class="address-element__address2__input-container"><input name="address2" type="text"
+                                                                                 maxlength="255"
+                                                                                 placeholder="Add unit/suite information here"
+                                                                                 value=""></div>
+                </div>
+              </div>
+              <div class="ui-component-col-4_md-12">
+                <div class="address-element__city">
+                  <div class="address-element__city__label-container"><label for="city">City*</label></div>
+                  <div class="address-element__city__input-container"><input name="city" type="text" required=""
+                                                                             maxlength="255" value=""></div>
+                </div>
+              </div>
+              <div class="ui-component-col-4_md-12">
+                <div class="address-element__province">
+                  <div class="address-element__province__label-container"><label for="province">State*</label></div>
+                  <div class="address-element__province__input-container"><input name="province" type="text" required=""
+                                                                                 maxlength="255" value=""></div>
+                </div>
+              </div>
+              <div class="ui-component-col-4_md-12">
+                <div class="address-element__postal-code">
+                  <div class="address-element__postal-code__label-container"><label for="postalCode">Zip Code*</label>
+                  </div>
+                  <div class="address-element__postal-code__input-container"><input name="postalCode" type="text"
+                                                                                    required="" maxlength="255"
+                                                                                    value=""></div>
+                </div>
+              </div>
+              <div>
+                <button class="ui-component-button ui-component-button_style_primary btn upgrade__address-button"
+                        type="button"><span class="ui-component-button__text">Validate Address</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ui-component-accordion__panel ui-component-accordion__panel_inactive ui-component-accordion__panel_animated ">
+        <div class="heading">
+          <div class="heading__title">Add Payment Information and Funds</div>
+          <div class="heading__action"><i
+            class="ui-component-icon ui-component-icon_size_null icon-twilio-dropdown heading__action-icon heading__action-icon_animated"></i>
+          </div>
+        </div>
+        <div
+          class="ui-component-accordion__body ui-component-accordion__body_disabled ui-component-accordion__body_animated">
+          <div class="payment-information__container">
+            <div class="payment-information__container--spacing">
+              <div class="ui-component-grid payment-information__grid--max-width">
+                <div class="ui-component-col-2"><label class="control-label">Method</label></div>
+                <div class="ui-component-col-3">
+                  <div class="ui-component-radio"><label
+                    class="ui-component-radio__label ui-component-radio__label_checked"><span
+                    class="ui-component-radio__wrap"><input type="radio" class="ui-component-radio__input" name=""
+                                                            value="card"><span
+                    class="ui-component-radio__checkmark ui-component-radio__checkmark_checked"></span></span><span
+                    class="ui-component-radio__label-text">Credit Card</span></label></div>
+                </div>
+                <div class="ui-component-col-7">
+                  <div class="ui-component-radio"><label class="ui-component-radio__label"><span
+                    class="ui-component-radio__wrap"><input type="radio" class="ui-component-radio__input" name=""
+                                                            value="paypal"><span
+                    class="ui-component-radio__checkmark"></span></span><span class="ui-component-radio__label-text">Paypal</span></label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="ui-component-grid payment-information__grid--max-width">
+                  <div class="ui-component-col-6"><label class="control-label payment-information__label--required">Credit
+                    Card Number</label><input id="card-number" name="card-number" tabindex="1" class="form-control "
+                                              type="text" maxlength="100" value=""></div>
+                  <div class="ui-component-col-4 payment-information__col--inline"><label
+                    class="control-label payment-information__label--required">Expires</label>
+                    <div class="payment-information__container--inline-flex"><input id="exp-month" name="exp-month"
+                                                                                    tabindex="2"
+                                                                                    class="form-control payment-information__input--inline"
+                                                                                    placeholder="MM" maxlength="2"
+                                                                                    type="text" value=""><span
+                      class="payment-information__span--inline">/</span><input id="exp-year" name="exp-year"
+                                                                               tabindex="3"
+                                                                               class="form-control payment-information__input--inline"
+                                                                               placeholder="YY" maxlength="2"
+                                                                               type="text" value=""></div>
+                  </div>
+                  <div class="ui-component-col-2 payment-information__col--inline"><label
+                    class="control-label payment-information__label--required">CVV</label><span
+                    class=" ui-component-tooltip__anchor"><a href="#"><i
+                    class="ui-component-icon ui-component-icon_size_null icon-twilio-question pull-right payment-information__popover "></i></a></span><input
+                    id="cvv" name="cvv" placeholder="***" tabindex="4" class="form-control " type="text" maxlength="4"
+                    value=""></div>
+                </div>
+                <div class="ui-component-grid payment-information__grid--max-width">
+                  <div class="ui-component-col-12"><label class="control-label payment-information__label--required">Name
+                    on Credit Card</label><input id="card-holder" name="card-holder" tabindex="5" class="form-control "
+                                                 type="text" maxlength="100" value=""></div>
+                </div>
+              </div>
+              <div id="paypal-add-form" class="hidden">
+                <div class="ui-component-grid">
+                  <div class="ui-component-col-5"><input type="hidden" id="nonceField" name="nonceField"></div>
+                </div>
+                <div class="ui-component-grid">
+                  <div class="ui-component-col-12"><p>To Pay with PayPal, click on the PayPal logo below</p>
+                    <div id="paypal-container">
+                      <div id="braintree-paypal-loggedin"
+                           style="display: none; max-width: 500px; overflow: hidden; padding: 16px; background-image: url(&quot;https://checkout.paypal.com/pwpp/2.23.0/images/paypal-small.svg&quot;), none; background-position: 20px 50%; background-repeat: no-repeat; background-size: 13px 15px; border-top: 1px solid rgb(209, 212, 214); border-bottom: 1px solid rgb(209, 212, 214);">
+                        <span id="bt-pp-name"
+                              style="color: rgb(40, 48, 54); font-size: 13px; font-weight: 800; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-left: 36px; -webkit-font-smoothing: antialiased;">PayPal</span><span
+                        id="bt-pp-email"
+                        style="color: rgb(110, 120, 127); font-size: 13px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-left: 5px; -webkit-font-smoothing: antialiased;"></span>
+                        <button id="bt-pp-cancel" type="button"
+                                style="color: rgb(61, 149, 206); font-size: 11px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 20px; margin: 0px 0px 0px 25px; padding: 0px; background-color: transparent; border: 0px; cursor: pointer; text-decoration: underline; float: right; -webkit-font-smoothing: antialiased;">
+                          Cancel
+                        </button>
+                      </div>
+                      <div id="braintree-paypal-loggedout"><a id="braintree-paypal-button" href="#"
+                                                              style="display: block; width: 115px; height: 44px; overflow: hidden;"><img
+                        src="https://checkout.paypal.com/pwpp/2.23.0/images/pay-with-paypal.png" alt="Pay with PayPal"
+                        style="max-width: 100%; display: block; width: 100%; height: 100%; outline: none; border: 0px;"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-information__container--funding">
+              <div class="ui-component-grid">
+                <div class="ui-component-col-5"><p><b>Fund Your Account</b></p></div>
+              </div>
+              <div>
+                <div class="ui-component-grid">
+                  <div class="ui-component-col-5"><label class="control-label">Amount to add to your Account</label>
+                  </div>
+                  <div class="ui-component-col-7"><label class="control-label"><a class="payment-information__link">Use
+                    promo code</a></label></div>
+                </div>
+                <div class="ui-component-grid">
+                  <div class="ui-component-col-12">
+                    <div class="payment-information__currency-input"><p class="currency-input__text--customer-message">
+                      Minimum amount is $20.00 and Maximum amount is $2000.00</p>
+                      <div class="currency-input__container--inline-flex">
+                        <div class="currency-input__field--addon">$</div>
+                        <div class="currency-input__field"><input id="fund-amount" name="fund-amount"
+                                                                  class="form-control" type="text" value="20.00"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-component-grid">
+                <div class="ui-component-col-5"><p><b>Automatic Recharge</b></p>
+                  <div class="ui-component-toggle__parent"><label
+                    class="ui-component-toggle payment-information__toggle">Disabled
+                    <div class="ui-component-toggle__box"></div>
+                  </label></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
